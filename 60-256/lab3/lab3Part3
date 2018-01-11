@@ -1,0 +1,6 @@
+
+#!/bin/bash
+var1=`grep -n $1<headAndTail|cut -b1|head -c1`
+var2=`grep -n $2<headAndTail|cut -b1|head -c1`
+echo $var1$var2
+head -n $var2 headAndTail|tail -n $((var2-var1-1))

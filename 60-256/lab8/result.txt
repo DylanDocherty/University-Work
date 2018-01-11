@@ -1,0 +1,3 @@
+lab8
+lab8.c
+result.txt
